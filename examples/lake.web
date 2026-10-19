@@ -1,0 +1,15 @@
+# Small temperate lake. Each line: prey -> predator [@ weight]
+# Weights are relative diet shares; a predator's shares are normalised.
+
+algae -> zooplankton @ 3
+algae -> snail
+algae -> midge_larva @ 1
+detritus -> midge_larva @ 2
+zooplankton -> perch_fry @ 2
+midge_larva -> perch_fry @ 1
+perch_fry -> perch @ 1
+midge_larva -> perch @ 1
+snail -> perch
+perch -> pike @ 3
+perch_fry -> pike @ 1
+species otter        # declared but not yet linked into the web
